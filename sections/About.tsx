@@ -21,7 +21,7 @@ export const About: React.FC = () => {
                     textStyles='text-center'
                 />
                 <motion.p
-                    variants={fadeIn('up', 'twin', 0.2, 1)}
+                    variants={fadeIn('up', 'tween', 0.2, 1)}
                     className='mt-[8px] font-normal sm:text-[32px] text-[24px] text-center text-secondary-white'
                 >
                     <span className='font-extrabold text-white'>Metaverse </span>
@@ -34,7 +34,7 @@ export const About: React.FC = () => {
                     the madness of the metaverse by scrolling down
                 </motion.p>
                 <motion.img
-                    variants={fadeIn('up', 'twin', 0.3, 1)}
+                    variants={fadeIn('up', 'tween', 0.3, 1)}
                     src='/arrow-down.svg'
                     alt='arrow-down'
                     className='w-[18px] h-[28px] object-contain mt-[32px]'

@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
                     </motion.div>
                 </div>
                 <motion.div
-                    variants={slideIn('right', 'twin', 0.2, 1)}
+                    variants={slideIn('right', 'tween', 0.2, 1)}
                     className='relative w-full md:-mt-[20px] -mt-[12px]'
                 >
                     <div

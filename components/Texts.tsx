@@ -5,10 +5,10 @@ import { textContainer, textVariant2 } from '../utils/motion'
 
 type TypingProps = {
     title: string
-    textStyles: string
+    textStyles?: string
 }
 
-export const TypingText: React.FC<TypingProps> = ({ title, textStyles }) => {
+export const TypingText: React.FC<TypingProps> = ({ title, textStyles = '' }) => {
     return (
         <motion.p
             variants={textContainer}

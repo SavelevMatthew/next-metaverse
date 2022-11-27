@@ -3,6 +3,7 @@ import { NavBar } from '../components/NavBar'
 import { Hero } from '../sections/Hero'
 import { About } from '../sections/About'
 import { Explore } from '../sections/Explore'
+import { GetStarted } from '../sections/GetStarted'
 
 const HomePage = () => {
     return (
@@ -15,7 +16,7 @@ const HomePage = () => {
                 <Explore/>
             </div>
             <div className='relative'>
-                {/*started*/}
+                <GetStarted/>
                 <div className='gradient-04 z-0'/>
                 {/*new*/}
             </div>
