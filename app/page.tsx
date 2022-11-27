@@ -8,6 +8,7 @@ import { WhatsNew } from '../sections/WhatsNew'
 import { World } from '../sections/World'
 import { Insights } from '../sections/Insights'
 import { Feedback } from '../sections/Feedback'
+import { Footer } from '../components/Footer'
 
 const HomePage = () => {
     return (
@@ -30,7 +31,7 @@ const HomePage = () => {
                 <div className='gradient-04 z-0'/>
                 <Feedback/>
             </div>
-            {/*footer*/}
+            <Footer/>
         </div>
     )
 }
