@@ -113,7 +113,6 @@
     "func-call-spacing": "error",
     "@typescript-eslint/func-call-spacing": "error",
     "keyword-spacing": "error",
-    "@typescript-eslint/keyword-spacing": "error",
     "space-infix-ops": [
       "error",
       {
@@ -133,6 +132,7 @@
         "props": "never",
         "children": "never"
       }
-    ]
+    ],
+    "react/react-in-jsx-scope": "off"
   }
 }
