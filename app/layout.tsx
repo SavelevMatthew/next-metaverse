@@ -1,20 +1,22 @@
+import React from 'react'
 import Head from 'next/head'
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
 
-const App = ({ Component, pageProps }: AppProps) => {
+type BaseLayoutProps = {
+    children: React.ReactNode
+}
+
+const BaseLayout: React.FC<BaseLayoutProps> = ({ children }) => {
     return (
-        <>
+        <html lang='en'>
             <Head>
                 <title>MetaVersus</title>
-                <meta name='viewport' content='width=device-width, initial-scale=1' />
-                <link rel='icon' href='/favicon.ico' />
                 <link rel='preconnect' href='https://stijndv.com' />
                 <link rel='stylesheet' href='https://stijndv.com/fonts/Eudoxus-Sans.css' />
             </Head>
-            <Component {...pageProps} />
-        </>
+            <body>{children}</body>
+        </html>
     )
 }
 
-export default App
+export default BaseLayout
