@@ -22,7 +22,15 @@
     }
   },
   "rules": {
+    "comma-spacing": "error",
     "@typescript-eslint/comma-spacing": "error",
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
     "@typescript-eslint/indent": [
       "error",
       4,
@@ -34,13 +42,39 @@
       "error",
       "prefer-single"
     ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "@typescript-eslint/quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
     "@typescript-eslint/semi": [
       "error",
       "never"
     ],
+    "space-before-function-paren": [
+      "error",
+      "always"
+    ],
     "@typescript-eslint/space-before-function-paren": [
       "error",
       "always"
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "functions": "only-multiline",
+        "arrays": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "objects": "always-multiline"
+      }
     ],
     "@typescript-eslint/comma-dangle": [
       "error",
@@ -55,25 +89,37 @@
         "generics": "always-multiline"
       }
     ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
     "@typescript-eslint/object-curly-spacing": [
       "error",
       "always"
     ],
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "args": "none"
-      }
-    ],
+    "no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-array-constructor": "error",
     "@typescript-eslint/no-array-constructor": "error",
+    "no-loop-func": "error",
     "@typescript-eslint/no-loop-func": "error",
     "@typescript-eslint/no-loss-of-precision": "error",
+    "no-useless-constructor": "error",
     "@typescript-eslint/no-useless-constructor": "error",
+    "no-var": "error",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/ban-ts-comment": "warn",
     "@typescript-eslint/type-annotation-spacing": "error",
+    "func-call-spacing": "error",
     "@typescript-eslint/func-call-spacing": "error",
+    "keyword-spacing": "error",
     "@typescript-eslint/keyword-spacing": "error",
+    "space-infix-ops": [
+      "error",
+      {
+        "int32Hint": false
+      }
+    ],
     "@typescript-eslint/space-infix-ops": [
       "error",
       {
