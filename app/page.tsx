@@ -6,6 +6,7 @@ import { Explore } from '../sections/Explore'
 import { GetStarted } from '../sections/GetStarted'
 import { WhatsNew } from '../sections/WhatsNew'
 import { World } from '../sections/World'
+import { Insights } from '../sections/Insights'
 
 const HomePage = () => {
     return (
@@ -24,8 +25,8 @@ const HomePage = () => {
             </div>
             <World/>
             <div className='relative'>
-                {/*insights*/}
-                <div className='gradient-05 z-0'/>
+                <Insights/>
+                <div className='gradient-04 z-0'/>
                 {/*feedback*/}
             </div>
             {/*footer*/}
