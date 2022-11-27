@@ -23,10 +23,20 @@ export const TypingText: React.FC<TypingProps> = ({ title, textStyles }) => {
     )
 }
 
-export const TitleText: React.FC<TypingProps> = () => {
+type TitleProps = {
+    title: React.ReactNode
+    textStyles: string
+}
+
+export const TitleText: React.FC<TitleProps> = ({ title, textStyles }) => {
     return (
-        <h2>
-            Title
-        </h2>
+        <motion.h2
+            variants={textVariant2}
+            initial='hidden'
+            whileInView='show'
+            className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${textStyles}`}
+        >
+            {title}
+        </motion.h2>
     )
 }
