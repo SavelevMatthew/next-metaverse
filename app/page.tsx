@@ -4,6 +4,7 @@ import { Hero } from '../sections/Hero'
 import { About } from '../sections/About'
 import { Explore } from '../sections/Explore'
 import { GetStarted } from '../sections/GetStarted'
+import { WhatsNew } from '../sections/WhatsNew'
 
 const HomePage = () => {
     return (
@@ -18,7 +19,7 @@ const HomePage = () => {
             <div className='relative'>
                 <GetStarted/>
                 <div className='gradient-04 z-0'/>
-                {/*new*/}
+                <WhatsNew/>
             </div>
             <div className='relative'>
                 {/*insights*/}
