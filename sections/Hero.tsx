@@ -8,9 +8,7 @@ export const Hero: React.FC = () => {
     return (
         <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
             <motion.div
-                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                // @ts-ignore
-                variants={staggerContainer}
+                variants={staggerContainer()}
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: false, amount: 0.25 }}
